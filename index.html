@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 3 (form)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <form action="#" method="GET" class="form">
+    <legend class="legend">Please fill out the form below</legend>
+    <label class="label" for="fullName">Full name</label>
+    <input class="input-standart" type="text" id="fullName">
+
+    <label class="label" for="email">Your e-mail address</label>
+    <input class="input-standart" type="email" id="email">
+
+    <label class="label" for="phone">Your phone number</label>
+    <input class="input-standart" type="tel" id="phone">
+
+    <label class="label" for="country">Select your country</label>
+    <select class="select-box input-standart" name="" id="country">
+      <option value="UK" selected>UK</option>
+      <option value="USA">USA</option>
+    </select>
+
+    <div class="radio-block">
+      <h3 class="title_event">I want to attend event</h3>
+      <div class="radio-block-item">
+        <input class="radio inline-block" type="radio" id="online" name="value" value="online" checked>
+        <label class="label radio-label" for="online">online</label>
+      </div>
+      <input class="radio inline-block" type="radio" id="offline" name="value" value="offline">
+      <label class="label radio-label" for="offline">offline</label>
+    </div>
+
+    <label class="label" for="comments">Comments</label>
+    <textarea class="textarea input-standart" id="comments" cols="30" rows="10"></textarea>
+
+    <div class="agree-block">
+      <input class="agree" type="checkbox" id="policy">
+      <label class="label agree" for="policy">I agree with <a href="#">the privacy policy</a></label>
+    </div>
+
+
+    <div class="button-block">
+      <button class="btn clear" type="reset">Clear form</button>
+      <button class="btn submit" type="submit">Submit form</button>
+    </div>
+
+
+  </form>
+</body>
+
+</html>

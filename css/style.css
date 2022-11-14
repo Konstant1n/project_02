@@ -1,0 +1,199 @@
+label,
+input,
+select,
+textarea,
+button {
+    cursor: pointer;
+}
+
+.form {
+    padding: 48px 0 78px 11px;
+    display: flex;
+    flex-flow: column;
+    max-width: 811px;
+}
+
+.legend {
+    font-size: 32px;
+    color: #000000;
+    font-family: "Roboto", "Arial", sans-serif;
+    margin: 0 0 52px 0;
+}
+
+.label {
+    font-size: 20px;
+    color: #000000;
+    font-family: "Roboto";
+    margin: 0 0 13px 0;
+}
+
+.title_event {
+    font-size: 24px;
+    color: #000000;
+    font-family: "Roboto";
+    margin: 0 0 29px 0;
+}
+
+.input-standart {
+    width: 800px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #e6e6e6;
+    border: 2px solid #808080;
+    margin: 0 0 36px 0;
+}
+
+.input-standart:hover,
+.radio,
+.agree {
+    filter: brightness(105%);
+}
+
+
+.select-box {
+    font-size: 20px;
+    color: #000000;
+    font-family: "Roboto";
+    margin: 0 0 38px 0;
+    padding-left: 20px;
+    appearance: none;
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+
+    background-image: url(../img/arrow_select.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: right 20px top 50%, 0 0;
+    background-size: 1em auto, 100%;
+}
+
+/* Кастомізація radiobutton */
+.radio-block {
+    margin-bottom: 27px;
+}
+
+.radio-block input[type=radio] {
+	display: none; 
+}
+
+.radio-block label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 41px;
+	margin-right: 0;
+	line-height: 32px;
+	user-select: none;
+}
+.radio-block label:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+	background: url(../img/radio_btn.png) 0 0 no-repeat;
+}
+ 
+.radio-block input[type=radio]:checked + label:before {
+	background: url(../img/radio_btn_selected.png) 0 0 no-repeat;
+}
+ 
+.radio-block label:hover:before{
+	filter: brightness(120%);
+}
+
+.radio-label {
+    margin-bottom: 10px;
+    display: inline-flex;
+}
+
+
+/* Кастомізація  textarea*/
+.textarea {
+    height: 100px;
+    margin: 0 0 22px 0;
+    resize: none;
+}
+
+/* Кастомізація  checkbox*/
+.label a {
+    color: #25256e;
+    text-decoration: none;
+}
+
+.agree-block {
+    margin: 0 0 48px 0;
+}
+
+.agree-block {
+    margin-bottom: 33px;
+}
+
+.agree-block input[type=checkbox] {
+	display: none; 
+}
+
+.agree-block label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 41px;
+	margin-right: 0;
+	line-height: 32px;
+	user-select: none;
+}
+.agree-block label:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+	background: url(../img/checkbox.png) 0 0 no-repeat;
+}
+ 
+.agree-block input[type=checkbox]:checked + label:before {
+	background: url(../img/checkbox_checked.png) 0 0 no-repeat;
+}
+ 
+.agree-block label:hover:before{
+	filter: brightness(120%);
+}
+
+/* Блок buttons */
+.button-block {
+    display: flex;
+}
+
+.btn {
+    width: 360px;
+    height: 75px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-family: "Roboto";
+}
+
+.clear {
+    background-color: #e6e6e6;
+    border: 0px solid #808080;
+    color: #808080;
+    margin-right: 83px;
+}
+
+.clear:hover {
+    filter: brightness(95%);
+}
+
+.submit {
+    background-color: #000000;
+    border: 0px solid #808080;
+    color: #ffffff;
+}
+
+.submit:hover {
+    filter: brightness(150%);
+}
